@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lunarphase-js": "^2.0.3",
     "vue": "^3.5.12"
   },
   "devDependencies": {
