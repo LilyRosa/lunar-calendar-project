@@ -1,10 +1,10 @@
 <script setup>
-import Initial from "./components/Initial.vue";
+import { RouterView } from "vue-router";
 </script>
 
 <template>
   <div>
-    <Initial />
+    <RouterView />
   </div>
 </template>
 

@@ -23,10 +23,11 @@
           <h4>{{ nextPhaseDate }}</h4>
         </div>
       </div>
-
-      <div class="btn">
-        <button>📆 Ver Calendario</button>
-      </div>
+      <RouterLink to="calendar">
+        <div class="btn">
+          <button>📆 Ver Calendario</button>
+        </div>
+      </RouterLink>
     </div>
   </main>
 </template>
@@ -34,16 +35,17 @@
 <script setup>
 import { ref } from "vue";
 import {
-  getCurrentMoonPhase,
+  getMoonPhase,
   getNextMoonPhase,
   getMoonPhasePhoto,
   getDaysBeforeNextPhase,
   findNextMoonPhaseChange,
   getFormatedDate,
 } from "../utils/moonPhases.js";
+import { RouterLink } from "vue-router";
 
 let moonPhasePhoto = ref(getMoonPhasePhoto());
-let moonPhaseCurrent = ref(getCurrentMoonPhase());
+let moonPhaseCurrent = ref(getMoonPhase());
 let nextPhase = ref(getNextMoonPhase());
 let nextPhaseDate = ref(getFormatedDate(findNextMoonPhaseChange()));
 let daysBeforeNextPhase = ref(getDaysBeforeNextPhase());
@@ -56,7 +58,7 @@ let daysBeforeNextPhase = ref(getDaysBeforeNextPhase());
   justify-content: center;
   min-height: 100vh;
   background-image: url("/images/background.gif");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 

@@ -1,7 +1,7 @@
 import { Moon } from "lunarphase-js";
-export function getCurrentMoonPhase() {
-  const phase = Moon.lunarPhase(new Date());
-  const emoji = Moon.lunarPhaseEmoji();
+export function getMoonPhase(date = new Date(), paintEmoji = true) {
+  const phase = Moon.lunarPhase(date);
+  const emoji = paintEmoji ? Moon.lunarPhaseEmoji(date) : "";
   let resp = "";
   if (phase === "New") {
     resp = "Luna Nueva " + emoji;
@@ -50,21 +50,21 @@ export function getMoonPhasePhoto() {
   const phase = Moon.lunarPhase(new Date());
   let ruta = "";
   if (phase === "New") {
-    ruta = "/images/luna nueva original.jpg";
+    ruta = "/images/nueva.png";
   } else if (phase === "Waxing Crescent") {
-    ruta = "/images/luna creciente iluminante original.jpg";
+    ruta = "/images/creciente_iluminante.png";
   } else if (phase === "First Quarter") {
-    ruta = "/images/luna cuarto creciente original.jpg";
+    ruta = "/images/cuarto_creciente.png";
   } else if (phase === "Waxing Gibbous") {
-    ruta = "/images/luna gibosa creciente original.jpg";
+    ruta = "/images/gibosa_creciente.png";
   } else if (phase === "Full") {
-    ruta = "/images/luna llena original.jpg";
+    ruta = "/images/llena.png";
   } else if (phase === "Waning Gibbous") {
-    ruta = "/images/luna gibosa menguante original.jpg";
+    ruta = "/images/gibosa_menguante.png";
   } else if (phase === "Last Quarter") {
-    ruta = "/images/luna cuarto menguante original.jpg";
+    ruta = "/images/cuarto_menguante.png";
   } else if (phase === "Waning Crescent") {
-    ruta = "/images/luna_menguante_original.png";
+    ruta = "/images/menguante.png";
   }
   return ruta;
 }
