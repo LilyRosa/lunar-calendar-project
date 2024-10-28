@@ -71,7 +71,10 @@ let daysBeforeNextPhase = ref(getDaysBeforeNextPhase());
   background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
   border-radius: 20px; /* Bordes redondeados */
   padding: 40px; /* Espaciado interno */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  margin: 5px;
+  width: 70%;
+  max-width: 400px;
 }
 
 .moon img {
@@ -153,5 +156,11 @@ let daysBeforeNextPhase = ref(getDaysBeforeNextPhase());
   box-shadow: rgba(0, 0, 0, 0.3) -6px -6px -12px inset,
     rgba(255, 255, 255, 0.6) -6px -6px -12px inset,
     rgba(0, 0, 0, 0.3) -6px -6px -12px, rgba(255, 255, 255, 0.6) -6px -6px -12px;
+}
+
+@media (max-width: 600px) {
+  .current-moon-phase {
+    font-size: 1.5em;
+  }
 }
 </style>

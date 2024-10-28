@@ -10,11 +10,11 @@ export function getMoonPhase(date = new Date(), paintEmoji = true) {
   } else if (phase === "First Quarter") {
     resp = "Luna Cuarto Creciente " + emoji;
   } else if (phase === "Waxing Gibbous") {
-    resp = "Luna Gibbosa Creciente " + emoji;
+    resp = "Luna Gibosa Creciente " + emoji;
   } else if (phase === "Full") {
     resp = "Luna Llena " + emoji;
   } else if (phase === "Waning Gibbous") {
-    resp = "Luna Gibbosa Menguante " + emoji;
+    resp = "Luna Gibosa Menguante " + emoji;
   } else if (phase === "Last Quarter") {
     resp = "Luna Cuarto Menguante " + emoji;
   } else if (phase === "Waning Crescent") {
@@ -31,11 +31,11 @@ export function getNextMoonPhase() {
   } else if (phase === "Waxing Crescent") {
     resp = "Luna Cuarto Creciente 🌓";
   } else if (phase === "First Quarter") {
-    resp = "Luna Gibbosa Creciente 🌔";
+    resp = "Luna Gibosa Creciente 🌔";
   } else if (phase === "Waxing Gibbous") {
     resp = "Luna Llena 🌕";
   } else if (phase === "Full") {
-    resp = "Luna Gibbosa Menguante 🌖";
+    resp = "Luna Gibosa Menguante 🌖";
   } else if (phase === "Waning Gibbous") {
     resp = "Luna Cuarto Menguante 🌗";
   } else if (phase === "Last Quarter") {

@@ -102,10 +102,12 @@ const goBack = () => {
 .selectors {
   display: flex;
   justify-content: center; /* Centrar los selectores en la fila */
+  width: 90%;
 }
 
 .selector-group {
   display: flex; /* Colocar los selectores uno al lado del otro */
+  width: 90%;
 }
 
 .month,
@@ -114,6 +116,7 @@ const goBack = () => {
   flex-direction: column; /* Colocar el texto encima del selector/input */
   align-items: center; /* Centrar el contenido */
   margin-right: 20px; /* Espacio entre los selectores */
+  width: 90%;
 }
 
 .text {
