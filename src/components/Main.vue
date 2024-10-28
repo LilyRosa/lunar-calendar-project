@@ -74,10 +74,12 @@ const goBack = () => {
   backdrop-filter: blur(3px);
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  padding: 40px;
+  padding: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-  position: relative; /* Permite posicionar elementos dentro */
+  /* Permite posicionar elementos dentro */
   margin: 5px;
+  width: 80%;
+  max-width: 500px;
 }
 
 .back-button {
