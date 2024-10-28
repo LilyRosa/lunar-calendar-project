@@ -130,6 +130,10 @@ select {
   border: 1px solid #ccc; /* Borde suave */
 }
 
+input[type="number"] {
+  max-width: 70px;
+}
+
 input[type="number"]:focus,
 select:focus {
   border-color: deeppink; /* Color del borde al enfocar */
